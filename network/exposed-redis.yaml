@@ -2,7 +2,7 @@ id: exposed-redis
 
 info:
   name: Redis Unauth Server
-  author: pd-team
+  author: pdteam
   severity: high
   reference: https://redis.io/topics/security
   tags: network,redis
@@ -12,6 +12,7 @@ network:
       - data: "info\r\nquit\r\n"
 
     host:
+      - "{{Hostname}}"
       - "{{Hostname}}:6379"
     read-size: 2048
 
