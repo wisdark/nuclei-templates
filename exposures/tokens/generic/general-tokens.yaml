@@ -2,7 +2,7 @@ id: generic-tokens
 
 info:
   name: Generic Tokens
-  author: nadino & geeknik
+  author: nadino,geeknik
   severity: info
   tags: exposure,token
 
@@ -25,7 +25,9 @@ requests:
       - type: regex
         part: body
         regex:
-          - (K|k)ey(up|down|press)
+          - '(?i)key(up|down|press|boardnavigation)'
+          - '(?i)password(emailnotfoundmessage|label|errormessage|message)'
+        condition: or
         negative: true
 
     extractors:
