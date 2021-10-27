@@ -1,31 +1,20 @@
 name: 🗒 Templates Stats
 
 on:
-  create:
-    tags:
-      - v*
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.repository == 'projectdiscovery/nuclei-templates' && github.ref == 'refs/heads/master'
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@master
-        with:
-          fetch-depth: 0
-
-      - name: Setup golang
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.14
+      - uses: actions/checkout@master
+      - uses: actions/setup-go@v2
+        with: 
+          go-version: 1.17
 
       - name: Installing Template Stats
-        env:
-          GO111MODULE: on
         run: |
-          go get -v github.com/projectdiscovery/templates-stats@main
+          go install github.com/projectdiscovery/templates-stats@main
         shell: bash
 
       - name: Markdown Stats

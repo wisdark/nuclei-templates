@@ -42,18 +42,18 @@ An overview of the nuclei template project, including statistics on unique tags,
 
 |    TAG    | COUNT |    AUTHOR     | COUNT |    DIRECTORY     | COUNT | SEVERITY | COUNT |  TYPE   | COUNT |
 |-----------|-------|---------------|-------|------------------|-------|----------|-------|---------|-------|
-| cve       |   666 | dhiyaneshdk   |   248 | cves             |   674 | info     |   615 | http    |  1859 |
-| panel     |   236 | pikpikcu      |   246 | vulnerabilities  |   284 | high     |   535 | file    |    46 |
-| lfi       |   228 | pdteam        |   198 | exposed-panels   |   235 | medium   |   413 | network |    39 |
-| xss       |   225 | daffainfo     |   183 | exposures        |   186 | critical |   236 | dns     |    11 |
-| exposure  |   221 | geeknik       |   150 | technologies     |   170 | low      |   161 |         |       |
-| wordpress |   206 | dwisiswant0   |   132 | misconfiguration |   129 |          |       |         |       |
-| rce       |   193 | gy741         |    72 | takeovers        |    71 |          |       |         |       |
-| cve2020   |   159 | madrobot      |    62 | default-logins   |    54 |          |       |         |       |
-| wp-plugin |   139 | princechaddha |    55 | file             |    46 |          |       |         |       |
-| cve2021   |   112 | pussycat0x    |    55 | workflows        |    35 |          |       |         |       |
+| cve       |   843 | dhiyaneshdk   |   300 | cves             |   847 | info     |   806 | http    |  2286 |
+| lfi       |   348 | daffainfo     |   290 | vulnerabilities  |   332 | high     |   655 | file    |    51 |
+| panel     |   292 | pikpikcu      |   281 | exposed-panels   |   286 | medium   |   483 | network |    46 |
+| xss       |   260 | pdteam        |   202 | technologies     |   203 | critical |   299 | dns     |    12 |
+| wordpress |   260 | geeknik       |   166 | exposures        |   199 | low      |   157 |         |       |
+| exposure  |   248 | dwisiswant0   |   152 | misconfiguration |   143 |          |       |         |       |
+| rce       |   218 | gy741         |    83 | token-spray      |    83 |          |       |         |       |
+| tech      |   197 | pussycat0x    |    76 | takeovers        |    66 |          |       |         |       |
+| wp-plugin |   180 | princechaddha |    67 | default-logins   |    60 |          |       |         |       |
+| cve2020   |   166 | madrobot      |    63 | file             |    51 |          |       |         |       |
 
-**150 directories, 2015 files**.
+**178 directories, 2459 files**.
 
 </td>
 </tr>
@@ -80,12 +80,15 @@ Feel free to open a discussion on [Github discussions](https://github.com/projec
 👨‍💻 Community
 -----
 
-You are welcome to join our [Discord Community](https://discord.gg/KECAGdH).
-You can also follow us on [Twitter](https://twitter.com/pdiscoveryio) to keep up with everything related to projectdiscovery.
+You are welcome to join the active [Discord Community](https://discord.gg/projectdiscovery) to discuss directly with project maintainers and share things with others around security and automation.
+Additionally, you may follow us on [Twitter](https://twitter.com/pdnuclei) to be updated on all the things about Nuclei.
 
-💡 Notes
------
--  Use YAMLlint (e.g. [yamllint](http://www.yamllint.com/) to validate the syntax of templates before sending pull requests.
+
+<p align="center">
+<a href="https://github.com/projectdiscovery/nuclei-templates/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=projectdiscovery/nuclei-templates&max=300">
+</a>
+</p>
 
 
 Thanks again for your contribution and keeping this community vibrant. :heart:
